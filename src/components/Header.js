@@ -13,9 +13,9 @@ function Header() {
             <ul className="nav__menu">
                 <li><Link to="/profile/sdfsdf">Home</Link></li>
                 <li><Link to="/login">Login</Link></li>
-                <li><Link to="/authors">Authors</Link></li>
                 <li><Link to="/logout">Logout</Link></li>
             </ul>
+            
             {/* <button className="nav__toggle-btn">
                 <AiOutlineClose/>
             </button> */}
