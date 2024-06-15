@@ -6,8 +6,8 @@ import Form from './components/form';
 function App() {
   return (
     <div>
-      {/* <Form/> */}
-      <PumpOperator/>
+      <Form/>
+      {/* <PumpOperator/> */}
     </div>
   );
 }
