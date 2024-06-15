@@ -7,16 +7,16 @@ function PaymentForm() {
     const onSubmit = async (data) => {
         console.log(data);
         reset();
-        try {
-            let res = await axios.post('http://localhost:5000/users/createpayment', data)
-            if (res.data.acknowledged) {
-                alert("Payment information submitted successfully");
-            } else {
-                alert("Payment submission failed");
-            }
-        } catch {
-            console.log("err");
-        }
+        // try {
+        //     let res = await axios.post('http://localhost:5000/users/createpayment', data)
+        //     if (res.data.acknowledged) {
+        //         alert("Payment information submitted successfully");
+        //     } else {
+        //         alert("Payment submission failed");
+        //     }
+        // } catch {
+        //     //console.log("err");
+        // }
         reset();
     };
 
