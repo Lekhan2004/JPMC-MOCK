@@ -1,16 +1,16 @@
 import { useForm } from "react-hook-form";
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 function Formi()
 {
     const { register, handleSubmit,reset, formState: { errors } } = useForm();
-    
         const onSubmit = async (data) => {
             console.log(data);
             try{
                 let res = await axios.post('http://localhost:5000/users/createblog', data)
                 if(res.data.acknowledged){
                   alert("Blog added successfully")
-                  navigate('/blogs');
+                //   navigate('/blogs');
                 }
                 else{
                   alert("Blog creation failed")
