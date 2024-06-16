@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+// import axios from 'axios';
+// import { useNavigate } from 'react-router-dom';
 
 function PumpOperator() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
