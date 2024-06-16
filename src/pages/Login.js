@@ -24,7 +24,7 @@ function Login() {
     setErrorMessage('');
 
     try {
-      const response = await axios.post('http://localhost:5000/login', {
+      const response = await axios.post('https://jpmc-mock-production.up.railway.app/login', {
         userId: userData.userId,
         password: userData.password,
         userType: userData.userType
