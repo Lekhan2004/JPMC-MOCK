@@ -7,7 +7,7 @@ userApp.use((req, res, next) => {
 });
 
 userApp.post('/pumpoperater', (req, res) => {
-    const pumps = req.pumpoperater;
+    // const pumps = req.pumpoperater;
     
     res.send("hello");
 });

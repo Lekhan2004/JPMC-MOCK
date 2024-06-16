@@ -36,7 +36,7 @@ auth.post("/signup", async (req, res) => {
 });
 
 auth.post("/login", async (req, res) => {
-    const { userType, userId, password } = req.body;
+    const { userId, password } = req.body;
     const users = req.users;
     try {
         const dbuser = await users.findOne({ userId: userId });
