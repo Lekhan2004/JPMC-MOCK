@@ -6,7 +6,7 @@ import Layout from './components/Layout';
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Home from './pages/Home';
-// import PumpOperator from './pages/pumpoperater';
+import PumpOperator from './pages/pumpoperater';
 function App() {
   const router=createBrowserRouter([
     {
@@ -24,6 +24,10 @@ function App() {
         {
           path:'register',
           element:<Register/>
+        },
+        {
+        path:'pumpoperater',
+        element:<PumpOperator/>
         }
       ]
     }

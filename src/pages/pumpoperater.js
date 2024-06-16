@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-// import axios from 'axios';
+import axios from 'axios';
 // import { useNavigate } from 'react-router-dom';
 
 function PumpOperator() {
@@ -8,17 +8,17 @@ function PumpOperator() {
 
     const onSubmit = async (data) => {
         console.log(data);
-        // try {
-        //     let res = await axios.post('http://localhost:5000/users/createblog', data)
-        //     if (res.data.acknowledged) {
-        //         alert("Blog added successfully");
-        //         window.location.assign('/blogs');
-        //     } else {
-        //         alert("Blog creation failed");
-        //     }
-        // } catch (error) {
-        //     console.log("Error:", error);
-        // }
+        try {
+            let res = await axios.post('http://localhost:5000/users/createblog', data)
+            if (res.data.acknowledged) {
+                alert("Blog added successfully");
+                // window.location.assign('/blogs');
+            } else {
+                alert("Blog creation failed");
+            }
+        } catch (error) {
+            console.log("Error:", error);
+        }
 
         reset();
     };
