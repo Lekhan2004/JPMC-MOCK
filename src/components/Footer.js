@@ -1,24 +1,34 @@
-import React from 'react'
-// import { Link } from 'react-router-dom'
-
+import React from 'react';
+// import { Link } from 'react-router-dom';
+import './Layout.css'
 function Footer() {
   return (
-    <footer>
-        {/* <ul className="footer__categories">
-            <li><Link to="/posts/categories/Agriculture">Agriculture</Link></li>
-            <li><Link to="/posts/categories/Business">Business</Link></li>
-            <li><Link to="/posts/categories/Education">Education</Link></li>
-            <li><Link to="/posts/categories/Entertainment">Entertainment</Link></li>
-            <li><Link to="/posts/categories/Art">Art</Link></li>
-            <li><Link to="/posts/categories/Investment">Investment</Link></li>
-            <li><Link to="/posts/categories/Uncategorized">Uncategorized</Link></li>
-            <li><Link to="/posts/categories/Weather">Weather</Link></li>
-        </ul>
-        <div className="footer__content">
-            <small>This is a blog app by koushik</small>
-        </div> */}
+    <footer className="footermain">
+      <div className="container">
+        <div className="footer-links">
+          <a href="/about">About Us</a>
+          <a href="/projects">Projects</a>
+          <a href="/get-involved">Get Involved</a>
+          <a href="/contact">Contact Us</a>
+        </div>
+        <div className="footer-social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <p>&copy; {new Date().getFullYear()} Water Streamline NGO. All rights reserved.</p>
+      </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
