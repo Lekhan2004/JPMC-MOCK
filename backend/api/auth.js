@@ -8,6 +8,10 @@ auth.use((req, res, next) => {
     next();
 });
 
+auth.get('/data',(req,res)=>{
+  res.send("This is test Data2222")
+})
+
 auth.post("/signup", async (req, res) => {
     const { userType, userId, password } = req.body;
     const users = req.users;
@@ -58,4 +62,6 @@ auth.post("/login", async (req, res) => {
     }
 });
 
+
 module.exports = auth;
+
